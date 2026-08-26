@@ -45,7 +45,7 @@ jobs:
       - name: Image pushed successfully
         run: echo "Image pushed:${{ env.DOCKER_REGISTRY }}/${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}"
 
-  # ========== JOB 2: DEPLOY (CD) ==========
+  # ========== JOB 2: DEPLOY (CD) =========
   deploy:
     name: Deploy to Self-Hosted Runner
     runs-on: runner-isi  # Runner personnalisé
